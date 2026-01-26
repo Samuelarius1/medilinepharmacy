@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mediline Pharmacy - Digital Healthcare Services. AI Medicine Recommendation, Online Prescription, Health Records & More.">
+    <meta name="description" content="Mediline Pharmacy - Professional Pharmacy Services. Medicine Prescription, Drug Inquiries, Pharmacist Consultancy & More.">
     <title>Our Services | Mediline Pharmacy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="icon" href="icons/android-chrome-512x512.png" type="image/x-icon">
 </head>
@@ -22,7 +21,6 @@
   <img src="icons/android-chrome-192x192.png" alt="Mediline Pharmacy Logo">
   <span>Mediline Pharmacy</span>
 </div>
-
                 <div class="nav-menu" id="navMenu">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About Us</a>
@@ -42,16 +40,13 @@
     <section class="services-hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Smart Digital Healthcare Services</h1>
-                <p class="hero-subtitle">Experience modern pharmacy services powered by AI, designed for your convenience and safety</p>
+                <h1>Professional Pharmacy Services</h1>
+                <p>Expert pharmacist consultancy, prescription verification, and medication guidance for your health and wellness</p>
                 <div class="hero-decoration">
                     <div class="floating-icon icon-1"><i class="fas fa-capsules"></i></div>
-                    <div class="floating-icon icon-2"><i class="fas fa-heart-pulse"></i></div>
-                    <div class="floating-icon icon-3"><i class="fas fa-shield"></i></div>
+                    <div class="floating-icon icon-2"><i class="fas fa-prescription-bottle-medical"></i></div>
+                    <div class="floating-icon icon-3"><i class="fas fa-stethoscope"></i></div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero 1.png" alt="Digital Healthcare Services">
             </div>
         </div>
     </section>
@@ -60,111 +55,111 @@
     <section class="services-section">
         <div class="section-container">
             <div class="section-header">
-                <h2>Our Digital Services</h2>
-                <p>Comprehensive healthcare solutions at your fingertips</p>
+                <h2>Our Pharmacy Services</h2>
+                <p>Simple, professional healthcare solutions at your pharmacy</p>
             </div>
 
             <div class="services-grid">
-                <!-- Service 1: AI Medicine Recommendation -->
+                <!-- Service 1: Medicine Prescription Verification -->
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-file-prescription"></i>
                             <div class="icon-glow"></div>
                         </div>
-                        <h3>AI Medicine Recommendation</h3>
+                        <h3>Prescription Verification</h3>
                     </div>
-                    <p class="card-description">Describe your symptoms and get safe, intelligent medicine suggestions powered by advanced AI technology. Personalized recommendations for your health needs.</p>
+                    <p class="card-description">Professional verification of your prescriptions by our licensed pharmacists. We review and confirm all medication details for safety.</p>
                     <div class="card-features">
-                        <span class="feature-badge"><i class="fas fa-check"></i> Smart Analysis</span>
-                        <span class="feature-badge"><i class="fas fa-check"></i> Safe & Verified</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Licensed Pharmacist</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Safe Review</span>
                     </div>
-                    <button class="btn-service">Get Started <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-service" onclick="handleService('prescription')">Submit Prescription <i class="fas fa-arrow-right"></i></button>
                 </div>
 
-                <!-- Service 2: Online Prescription Upload -->
+                <!-- Service 2: Pharmacist Consultancy -->
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <i class="fas fa-file-medical"></i>
+                            <i class="fas fa-user-nurse"></i>
                             <div class="icon-glow"></div>
                         </div>
-                        <h3>Online Prescription Upload</h3>
+                        <h3>Pharmacist Consultancy</h3>
                     </div>
-                    <p class="card-description">Upload your prescription easily and get quick pharmacist review. Our licensed professionals verify and process your prescriptions within minutes.</p>
+                    <p class="card-description">Get expert advice from our qualified pharmacists about medications, dosage, side effects, and interactions with your existing medicines.</p>
                     <div class="card-features">
-                        <span class="feature-badge"><i class="fas fa-check"></i> Fast Review</span>
-                        <span class="feature-badge"><i class="fas fa-check"></i> Verified by Pharmacist</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Expert Advice</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Personalized Guidance</span>
                     </div>
-                    <button class="btn-service">Upload Now <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-service" onclick="handleService('consultancy')">Book Consultation <i class="fas fa-arrow-right"></i></button>
                 </div>
 
-                <!-- Service 3: Drug Availability & Stock Check -->
+                <!-- Service 3: Drug Information & Inquiries -->
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <i class="fas fa-boxes-stacked"></i>
+                            <i class="fas fa-info-circle"></i>
                             <div class="icon-glow"></div>
                         </div>
-                        <h3>Drug Availability & Stock Check</h3>
+                        <h3>Drug Inquiries & Information</h3>
                     </div>
-                    <p class="card-description">Check real-time inventory of medicines in our stores. Know exactly what's available before you visit or order. Real-time stock updates across all branches.</p>
+                    <p class="card-description">Ask any questions about specific medications, their uses, availability, pricing, and alternatives. Quick answers from our pharmacy team.</p>
                     <div class="card-features">
-                        <span class="feature-badge"><i class="fas fa-check"></i> Real-Time Data</span>
-                        <span class="feature-badge"><i class="fas fa-check"></i> All Branches</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Quick Response</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Accurate Info</span>
                     </div>
-                    <button class="btn-service">Check Stock <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-service" onclick="handleService('inquiry')">Ask Now <i class="fas fa-arrow-right"></i></button>
                 </div>
 
-                <!-- Service 4: Online Ordering & Home Delivery -->
+                <!-- Service 4: Medication Refills -->
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <i class="fas fa-truck-medical"></i>
+                            <i class="fas fa-prescription-bottle"></i>
                             <div class="icon-glow"></div>
                         </div>
-                        <h3>Online Ordering & Home Delivery</h3>
+                        <h3>Medication Refills</h3>
                     </div>
-                    <p class="card-description">Order medicines online and get them delivered to your doorstep. Fast, safe, and convenient delivery service with real-time tracking and professional handling.</p>
+                    <p class="card-description">Easily refill your medications at our pharmacy. Process prescriptions and get your medicines ready for pickup or delivery.</p>
                     <div class="card-features">
-                        <span class="feature-badge"><i class="fas fa-check"></i> Fast Delivery</span>
-                        <span class="feature-badge"><i class="fas fa-check"></i> Safe Packaging</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Fast Processing</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Convenient</span>
                     </div>
-                    <button class="btn-service">Order Now <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-service" onclick="handleService('refill')">Request Refill <i class="fas fa-arrow-right"></i></button>
                 </div>
 
-                <!-- Service 5: Pharmacist Live Chat -->
+                <!-- Service 5: Over-the-Counter Products -->
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <i class="fas fa-comments"></i>
+                            <i class="fas fa-shopping-basket"></i>
                             <div class="icon-glow"></div>
                         </div>
-                        <h3>Pharmacist Live Chat</h3>
+                        <h3>OTC Products & Advice</h3>
                     </div>
-                    <p class="card-description">Chat with qualified pharmacists in real-time. Get professional guidance on medications, interactions, side effects, and health concerns instantly.</p>
+                    <p class="card-description">Browse our selection of over-the-counter products with professional recommendations. Get guidance on what's best for your health needs.</p>
                     <div class="card-features">
-                        <span class="feature-badge"><i class="fas fa-check"></i> Expert Support</span>
-                        <span class="feature-badge"><i class="fas fa-check"></i> 24/7 Available</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Wide Selection</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Expert Recommendations</span>
                     </div>
-                    <button class="btn-service">Start Chat <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-service" onclick="handleService('otc')">Browse Products <i class="fas fa-arrow-right"></i></button>
                 </div>
 
-                <!-- Service 6: Health Records Management -->
+                <!-- Service 6: General Health Guidance -->
                 <div class="service-card">
                     <div class="card-header">
                         <div class="icon-wrapper">
-                            <i class="fas fa-shield-heart"></i>
+                            <i class="fas fa-heart-pulse"></i>
                             <div class="icon-glow"></div>
                         </div>
-                        <h3>Health Records Management</h3>
+                        <h3>Health & Wellness Guidance</h3>
                     </div>
-                    <p class="card-description">Securely store and manage your complete patient history. Access your medical records anytime, anywhere. Your health data protected with enterprise-grade security.</p>
+                    <p class="card-description">Get general health and wellness advice from our pharmacy professionals. Tips on medication management, health maintenance, and prevention.</p>
                     <div class="card-features">
-                        <span class="feature-badge"><i class="fas fa-check"></i> Secure Storage</span>
-                        <span class="feature-badge"><i class="fas fa-check"></i> Easy Access</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Holistic Approach</span>
+                        <span class="feature-badge"><i class="fas fa-check"></i> Wellness Tips</span>
                     </div>
-                    <button class="btn-service">View Records <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-service" onclick="handleService('wellness')">Learn More <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -174,18 +169,17 @@
     <section class="how-it-works">
         <div class="section-container">
             <div class="section-header">
-                <h2>How Our Services Work</h2>
-                <p>Simple, secure, and seamless healthcare at your fingertips</p>
+                <h2>How It Works</h2>
+                <p>Simple steps to access our pharmacy services</p>
             </div>
 
             <div class="steps-container">
                 <div class="step-item">
-                    <div class="step-number">1</div>
                     <div class="step-icon">
-                        <i class="fas fa-user-plus"></i>
+                        <i class="fas fa-phone"></i>
                     </div>
-                    <h3>Create Account</h3>
-                    <p>Sign up with your basic information to get started with our digital pharmacy platform</p>
+                    <h3>Contact Us</h3>
+                    <p>Reach out via phone, WhatsApp, or visit our store</p>
                 </div>
 
                 <div class="step-arrow">
@@ -193,12 +187,11 @@
                 </div>
 
                 <div class="step-item">
-                    <div class="step-number">2</div>
                     <div class="step-icon">
-                        <i class="fas fa-list-check"></i>
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <h3>Choose Service</h3>
-                    <p>Select from our range of services - from AI recommendations to health records management</p>
+                    <h3>Discuss Your Needs</h3>
+                    <p>Tell us what pharmacy service you need assistance with</p>
                 </div>
 
                 <div class="step-arrow">
@@ -206,12 +199,11 @@
                 </div>
 
                 <div class="step-item">
-                    <div class="step-number">3</div>
                     <div class="step-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3>Get Results</h3>
-                    <p>Receive personalized recommendations and support from our qualified healthcare professionals</p>
+                    <h3>Get Professional Help</h3>
+                    <p>Receive expert guidance from our pharmacists</p>
                 </div>
             </div>
         </div>
@@ -221,56 +213,56 @@
     <section class="features-highlight">
         <div class="section-container">
             <div class="section-header">
-                <h2>Why Choose Our Digital Services</h2>
+                <h2>Why Choose Mediline Pharmacy?</h2>
             </div>
 
             <div class="features-grid">
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <h3>Secure & Private</h3>
-                    <p>Your health data is encrypted and protected with enterprise-grade security standards</p>
+                    <h3>Licensed Pharmacists</h3>
+                    <p>Professional and certified pharmacy experts at your service</p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-zap"></i>
+                        <i class="fas fa-quality-assurance"></i>
                     </div>
-                    <h3>Lightning Fast</h3>
-                    <p>Get instant responses and quick pharmacy reviews to serve you better</p>
+                    <h3>Genuine Medicines</h3>
+                    <p>100% authentic and verified medications from trusted suppliers</p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Expert Team</h3>
-                    <p>Access to qualified pharmacists and healthcare professionals anytime</p>
+                    <h3>Quick Service</h3>
+                    <p>Fast and efficient pharmacy services with minimal wait time</p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-location-dot"></i>
                     </div>
-                    <h3>Mobile Friendly</h3>
-                    <p>Access our services seamlessly on any device - desktop, tablet, or mobile</p>
+                    <h3>Convenient Location</h3>
+                    <p>Easily accessible pharmacy in your neighborhood</p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-hand-holding-heart"></i>
                     </div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock support for any questions or concerns you may have</p>
+                    <h3>Caring Service</h3>
+                    <p>We genuinely care about your health and wellbeing</p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-piggy-bank"></i>
                     </div>
-                    <h3>Track Progress</h3>
-                    <p>Monitor your health journey with detailed records and progress tracking</p>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive prices on all medications and health products</p>
                 </div>
             </div>
         </div>
@@ -279,13 +271,13 @@
     <!-- CTA Section -->
     <section class="services-cta">
         <div class="cta-content">
-            <h2>Ready to Experience Modern Healthcare?</h2>
-            <p>Join thousands of satisfied customers using our digital pharmacy services</p>
+            <h2>Need Professional Pharmacy Services?</h2>
+            <p>Contact us today for expert guidance and quality medications</p>
             <div class="cta-buttons">
                 <button class="btn btn-primary" onclick="window.open('https://wa.me/256701404970', '_blank')">
                     <i class="fas fa-comments"></i> Chat on WhatsApp
                 </button>
-                <button class="btn btn-secondary">Get Started Free</button>
+                <button class="btn btn-secondary" onclick="handleService('contact')">Call Us Now</button>
             </div>
         </div>
     </section>
@@ -313,11 +305,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Mediline Pharmacy. All rights reserved. | Trusted Healthcare Since Day One</p>
+            <p>&copy; 2025 Mediline Pharmacy. All rights reserved. | Trusted Pharmacy Since Day One</p>
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
     <script src="scripts/services.js"></script>
 </body>
 </html>
